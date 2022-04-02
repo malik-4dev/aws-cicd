@@ -9,7 +9,7 @@ app.get('/health', function(req, res){
     res.status(200).send('ok');
   })
 app.get('/hello-world', function(req, res){
-    res.status(200).send('hello-world');
+    res.status(200).send('hello-aws');
   })
 app.get('*', function(req, res){
     res.status(400).send('ERROR: Invalid Path.');
