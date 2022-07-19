@@ -4,5 +4,5 @@ steps:
 - name: "gcr.io/cloud-builders/gcloud"  
   args: ["app", "create"]
   env:
-  - '--region=us-central1'
+  - 'region=us-central1'
   timeout: "1600s"
