@@ -9,7 +9,7 @@ app.get('/', function(req, res){
     res.status(200).send('ok-awsgcp');
   })
 app.get('/hello-world', function(req, res){
-    res.status(200).send('hello-aws-cicd');
+    res.status(200).send('hello-awscicd');
   })
 app.get('*', function(req, res){
     res.status(400).send('ERROR: Invalid Path.');
