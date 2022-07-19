@@ -6,7 +6,7 @@ const app=express()
 
 app.use(express.json())
 app.get('/', function(req, res){
-    res.status(200).send('ok');
+    res.status(200).send('ok-aws-gcp');
   })
 app.get('/hello-world', function(req, res){
     res.status(200).send('hello-aws-cicd');
