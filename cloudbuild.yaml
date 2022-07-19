@@ -2,8 +2,7 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'  
   args: ['install']
 - name: "gcr.io/cloud-builders/gcloud"  
+  args: ["app", "create", "--region=us-central"]
+- name: "gcr.io/cloud-builders/gcloud"  
   args: ["app", "deploy"]
-  env:
-  - '--region=us-central1'
-  - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   timeout: "1600s"
