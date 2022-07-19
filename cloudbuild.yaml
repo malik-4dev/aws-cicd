@@ -5,4 +5,5 @@ steps:
   args: ["app", "create"]
   env:
   - '--region=us-central1'
+  - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
   timeout: "1600s"
